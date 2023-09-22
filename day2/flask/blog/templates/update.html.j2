@@ -1,0 +1,15 @@
+{% extends "base.html.j2" %}
+{% block content %}
+<div class="container">
+    <h1> Update Post</h1>
+    <div class="jumbotron">
+        <form action="/update/{{ post.slug }}" method="post">
+            <label for="published">Published:</label><br>
+            <input type="text" name="published" placeholder={{ post.published }}/><br>
+            <label for="content">Content:</label><br>
+            <textarea name="content" cols="30" rows="5" placeholder={{ post.content }}></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</div>
+{% endblock %}
