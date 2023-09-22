@@ -1,0 +1,12 @@
+pip libraries:
+django
+
+-----------------------------------------
+
+django commands:
+export DJANGO_SETTINGS_MODULE=djblog.settings
+django-admin migrate
+django-admin runserver
+django-admin makemigrations
+django-admin shell_plus
+django-admin createsuperuser
